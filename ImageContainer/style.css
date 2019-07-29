@@ -1,0 +1,26 @@
+body {
+	background: whitesmoke;
+}
+
+.image-contaner {
+	background: white;
+	margin: auto;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #efefef;
+	box-shadow: 
+		/* the top layer shadow */
+		0 1px 1px rgba(0,0,0,0.15),
+		/* the second layer */
+		0 10px 0px -5px #eee,
+		/* the second layer shadow */
+		0 10px 1px -4px rgba(0,0,0,0.15),
+		/* the third layer */
+		0 20px 0px -10px #eee,
+		/* the third layer shadow */
+		0 20px 1px -9px rgba(0,0,0,0.15);
+	padding: 30px;
+	max-height: 600px;
+}

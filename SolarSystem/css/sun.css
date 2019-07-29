@@ -1,0 +1,24 @@
+
+ #sun {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  
+    margin-top: -50px;
+  margin-left: -50px;
+
+
+ 	width: 100px;
+ 	height: 100px;
+ 	border-radius: 50%;
+ 	background:  #ff9900;
+  -webkit-animation-name: Spin-Right; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: Spin-Right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Spin-Right {
+  100% {transform: rotate(360deg);}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Image Container</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="image-contaner">
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		  	<div class="row">
+		  		<div class="col col-lg-2 col-md-2 c0l-sm-4 c0l-xs-4">
+		  			 <span type="button" data-dismiss="image-contaner" class="closebtn backend">&times;</span>
+		  		</div>
+		  		<div class="col pull-left">
+		  			<div id="imgtext" class="panel-title">Panel title</div>
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="panel-body">
+		    <div class="image">
+				<img id="expandedImg" src="1.jpg" style="width:100%" />
+				<div class="gallery-action-button" style="margin: 5px auto;">
+				  	<a class="btn btn-success action" id="editGalleryLink"><i class="fas fa-pencil-alt"></i><span class="hide_on_md_screen">Edit</span></a>
+		            <a class="btn btn-danger action open-modal" id="deleteGalleryLink" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i><span class="hide_on_md_screen">Delete</span></a>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$('.closebtn').click(function(){
+  $('.image-contaner').css('display','none');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+ #earth {
+	background: #00aaff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+
+	//distance from sun
+	margin-top: -50px;
+	margin-left: -50px;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Image Gallery Using JavaScripts</title>
+		<link rel="stylesheet" href="css/main.css">
+		
+
+	</head>
+	<body>
+		
+		<div id="img-box" class="small">
+			<div class="shadow1"></div>
+			<div class="shadow2"></div>
+			<img id="smallImg" src="img/img3.jpg" />
+		</div>
+		<div class="imageList">
+			<ul>
+				<li onclick="onDesign()">DESIGN</li>
+				<li onclick="onWebsite()">WEBSITE</li>
+				<li onclick="onMarketing()">MARKETING</li>
+				<li onclick="onSoftware()">SOFTWARE</li>
+			</ul>
+		</div>
+
+		<div id="btn-icon" class="btn-box" onclick="imgSize()">
+			<span>&#9776;</span>
+		</div>
+
+	<script type="text/javascript">
+		var smallimg = document.getElementById("smallImg");
+		
+		function onWebsite() {
+			smallimg.src = "img/img2.png"
+		}
+		function onDesign() {
+			smallimg.src = "img/img3.jpg"
+		}
+		function onMarketing() {
+			smallimg.src = "img/img4.jpg"
+		}
+		function onSoftware() {
+			smallimg.src = "img/img1.jpg"
+		}
+
+		var imgBox = document.getElementById("img-box");
+		var menuIcon = document.getElementById("btn-icon");
+		function imgSize() {
+			if (imgBox.className == "small") {
+				imgBox.className = "full";
+			} else {
+				imgBox.className = "small";
+			}
+		}
+	</script>	
+	</body>
+</html>
